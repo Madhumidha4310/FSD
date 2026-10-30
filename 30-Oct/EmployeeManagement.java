@@ -1,9 +1,7 @@
 package Collections;
 import java.util.*;
 public class EmployeeManagement {
-
 	public static void main(String[] args) {
-
         ArrayList<Employee> list=new ArrayList<>();
         HashMap<Integer, String> dept=new HashMap<>();
         dept.put(1,"CSE");
@@ -96,11 +94,11 @@ class Employee {
     String name;
     String department;
     int salary;
-    Employee(int id, String name, String department, int salary) {
-        this.id = id;
-        this.name = name;
-        this.department = department;
-        this.salary = salary;
+    Employee(int id,String name,String department,int salary) {
+        this.id=id;
+        this.name=name;
+        this.department=department;
+        this.salary=salary;
     }
     void display() {
         System.out.println("Employee ID : " + id);
