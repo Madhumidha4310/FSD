@@ -3,9 +3,8 @@ import java.util.*;
 public class StudentManagementTask {
 
     public static void main(String[] args) {
-
-        ArrayList<Student> list = new ArrayList<>();
-        HashSet<Integer> set = new HashSet<>();
+        ArrayList<Student> list=new ArrayList<>();
+        HashSet<Integer> set=new HashSet<>();
         Student s1=new Student(101, "Arun", "CSE", 85);
         Student s2=new Student(102, "Kumar", "IT", 90);
         Student s3=new Student(103, "Priya", "ECE", 78);
@@ -41,7 +40,7 @@ public class StudentManagementTask {
 
         Iterator<Student> itr=list.iterator();
         while (itr.hasNext()) {
-            Student s = itr.next();
+            Student s=itr.next();
             if (s.id == removeId) {
                 itr.remove();
                 set.remove(removeId);
@@ -64,11 +63,11 @@ class Student {
     String name;
     String department;
     int marks;
-    Student(int id, String name, String department, int marks) {
-        this.id = id;
-        this.name = name;
-        this.department = department;
-        this.marks = marks;
+    Student(int id,String name,String department,int marks) {
+        this.id=id;
+        this.name=name;
+        this.department=department;
+        this.marks=marks;
     }
     void display() {
         System.out.println("ID : " + id);
