@@ -10,11 +10,11 @@ public class EmployeeManagement {
         dept.put(2,"IT");
         dept.put(3,"ECE");
         
-        Employee e1 = new Employee(101, "Arun", "CSE", 25000);
-        Employee e2 = new Employee(102, "Ravi", "IT", 30000);
-        Employee e3 = new Employee(103, "Priya", "ECE", 28000);
-        Employee e4 = new Employee(104, "Divya", "CSE", 40000);
-        Employee e5 = new Employee(105, "Kumar", "IT", 35000);
+        Employee e1=new Employee(101, "Arun", "CSE", 25000);
+        Employee e2=new Employee(102, "Ravi", "IT", 30000);
+        Employee e3=new Employee(103, "Priya", "ECE", 28000);
+        Employee e4=new Employee(104, "Divya", "CSE", 40000);
+        Employee e5=new Employee(105, "Kumar", "IT", 35000);
 
         list.add(e1);
         list.add(e2);
@@ -23,7 +23,7 @@ public class EmployeeManagement {
         list.add(e5);
 
         System.out.println("Employee Details:");
-        Iterator<Employee> itr = list.iterator();
+        Iterator<Employee> itr=list.iterator();
         while (itr.hasNext()) {
             itr.next().display();
         }
@@ -39,7 +39,7 @@ public class EmployeeManagement {
         int removeId=102;
         Iterator<Employee> itr1 = list.iterator();
         while (itr1.hasNext()) {
-            Employee e = itr1.next();
+            Employee e=itr1.next();
             if (e.id == removeId) {
                 itr1.remove();
                 System.out.println("Employee Removed: " + removeId);
