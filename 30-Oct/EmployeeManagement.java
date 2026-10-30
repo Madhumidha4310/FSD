@@ -4,11 +4,11 @@ public class EmployeeManagement {
 
 	public static void main(String[] args) {
 
-        ArrayList<Employee> list = new ArrayList<>();
-        HashMap<Integer, String> dept = new HashMap<>();
-        dept.put(1, "CSE");
-        dept.put(2, "IT");
-        dept.put(3, "ECE");
+        ArrayList<Employee> list=new ArrayList<>();
+        HashMap<Integer, String> dept=new HashMap<>();
+        dept.put(1,"CSE");
+        dept.put(2,"IT");
+        dept.put(3,"ECE");
         
         Employee e1 = new Employee(101, "Arun", "CSE", 25000);
         Employee e2 = new Employee(102, "Ravi", "IT", 30000);
@@ -28,7 +28,7 @@ public class EmployeeManagement {
             itr.next().display();
         }
 
-        int searchId = 103;
+        int searchId=103;
         for (Employee e : list) {
             if (e.id == searchId) {
                 System.out.println("Employee Found:");
@@ -36,7 +36,7 @@ public class EmployeeManagement {
             }
         }
 
-        int removeId = 102;
+        int removeId=102;
         Iterator<Employee> itr1 = list.iterator();
         while (itr1.hasNext()) {
             Employee e = itr1.next();
