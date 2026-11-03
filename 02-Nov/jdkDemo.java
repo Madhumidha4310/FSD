@@ -1,9 +1,3 @@
-/*
- * 1.Register
- * 2.Connection
- * 3.Statement
- * 4.print
- * 5.close*/
 package Collections;
 import java.sql.*;
 public class jdkDemo {
